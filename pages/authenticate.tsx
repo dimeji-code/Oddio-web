@@ -14,7 +14,7 @@ const Authenticate = () => {
 
             <label htmlFor="username">Password</label>
             <input className='block mb-5 border duration-700 outline-none focus:border-b-black' type="text" />
-            <p onClick={()=>{setLogin(!login)}} className='hover:text-blue-600 duration-500 hover:cursor-pointer text-[#2c2c2c] mb-5 font-light text-base'>Don't have an account? Sign Up.</p>
+            <p onClick={()=>{setLogin(!login)}} className='hover:text-blue-600 duration-500 hover:cursor-pointer text-[#2c2c2c] mb-5 font-light text-base'>Don&apos;t have an account? Sign Up.</p>
             
             <div className='flex'>
                 <Button text="submit" />
