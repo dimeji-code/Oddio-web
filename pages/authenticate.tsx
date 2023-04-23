@@ -1,7 +1,7 @@
 import Button from '@/components/Button'
 import React, { useState } from 'react'
 
-const authenticate = () => {
+const Authenticate = () => {
     const [login,setLogin] = useState<boolean>(true)
 
   return (
@@ -48,4 +48,4 @@ const authenticate = () => {
   )
 }
 
-export default authenticate
+export default Authenticate

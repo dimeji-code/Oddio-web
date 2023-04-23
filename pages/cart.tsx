@@ -7,7 +7,7 @@ import Button from '@/components/Button'
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 
-const cart = () => {
+const Cart = () => {
   const selectCart = useSelector((state:RootState) => state.cart)
   // const itemAmount = useSelector((state:any) => state.cart.totalAmount)
   const [itemArray, setItemArray] = useState<any>([])
@@ -107,4 +107,4 @@ const cart = () => {
     
   )
 }
-export default cart
+export default Cart

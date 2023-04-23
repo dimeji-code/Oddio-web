@@ -4,7 +4,7 @@ import { Items } from '@/data/data'
 import { useDispatch, useSelector } from 'react-redux'
 import { clearCart } from '@/reducers/cartReducer'
 
-const browse = () => {
+const Browse = () => {
     const [sort,setSort] =  useState("default")
     const selectCart = useSelector((state:any) => state.cart)
     const dispatch = useDispatch()
@@ -87,4 +87,4 @@ const browse = () => {
   )
 }
 
-export default browse
+export default Browse

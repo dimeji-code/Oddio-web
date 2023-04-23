@@ -1,7 +1,7 @@
 import React from 'react'
 import Image from 'next/image'
 
-const about = () => {
+const About = () => {
   return (
     <div className='md:px-[15%] pt-[10vh]'>
         <h1 className='max-md:px-7 text-3xl md:text-4xl font-semibold py-2'>About</h1>
@@ -33,4 +33,4 @@ const about = () => {
   )
 }
 
-export default about
+export default About
