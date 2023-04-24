@@ -34,7 +34,7 @@ const DetailedItem = (props: Props) => {
 
      
   return (
-    <div  className='absolute top-0 z-[100] duration:1000  left-0 w-full h-full bg-[#25294646] flex justify-center items-center'>
+    <div  className='absolute top-0 z-[200] overflow-hidden duration:1000  left-0 w-[100vw] h-[100vh] bg-[#25294646] flex justify-center items-center'>
         <div className='bg-white w-[90%] h-[80%] md:w-[70%] md:h-[70%] rounded-md shadow-md overflow-hidden flex flex-col'>
 
            <div className='w-full h-4/5 flex border-b-slate-400 border-b-[0.5px] shadow-sm'>
