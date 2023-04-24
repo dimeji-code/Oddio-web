@@ -3,6 +3,7 @@ import React, { useEffect, useState } from 'react'
 import { Items } from '@/data/data'
 import { useDispatch, useSelector } from 'react-redux'
 import { clearCart } from '@/reducers/cartReducer'
+import DetailedItem from '@/components/DetailedItem'
 
 const Browse = () => {
     const [sort,setSort] =  useState("default")

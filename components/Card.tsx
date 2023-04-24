@@ -1,9 +1,10 @@
-import React, { useEffect } from 'react'
+import React, { useEffect, useState } from 'react'
 import { ShoppingCartIcon } from '@heroicons/react/24/outline'
 import Link from 'next/link'
 import Image from 'next/image'
 import { useDispatch, useSelector } from 'react-redux'
 import { addItem } from '@/reducers/cartReducer'
+import DetailedItem from './DetailedItem'
 
 type Props = {
     img: string,
@@ -17,7 +18,7 @@ const Card = (props: Props) => {
 
   const dispatch = useDispatch();
   const cartItems = useSelector((state:any) => state.cart.cartItems)
-
+  const [item,setItem] = useState<boolean>(false)
   useEffect(()=>{
     //  localStorage.setItem('cart', JSON.stringify(cartItems))
      console.log("LOCAL STORAGE SAYS: " + localStorage.getItem('cart') )
@@ -31,8 +32,10 @@ const Card = (props: Props) => {
 
   return (
     <div className="object-cover ">
+      { item && <DetailedItem id={props.id} img={props.img} title={props.title} tags={props.tags} price={props.price}/> }
+
       <div className='hover:scale-105 duration-700 hover:cursor-pointer bg-white '> 
-        <div className='w-full  relative block '>
+        <div onClick={()=>{setItem(true)}} className='w-full  relative block '>
           <Image className=' duration-700'  src={props.img} alt={'image item'} style={{objectFit: 'cover'}} width={400} height={100} />
         </div> 
         <div className='flex flex-row justify-between'>
