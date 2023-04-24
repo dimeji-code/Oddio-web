@@ -2,31 +2,22 @@ import Card from '@/components/Card'
 import React, { useEffect, useState } from 'react'
 import { Items } from '@/data/data'
 import { useDispatch, useSelector } from 'react-redux'
-import { clearCart } from '@/reducers/cartReducer'
+import { clearCart } from '@/store/cartReducer'
 import DetailedItem from '@/components/DetailedItem'
+import { RootState } from '@/store/store'
 
 const Browse = () => {
     const [sort,setSort] =  useState("default")
-    const selectCart = useSelector((state:any) => state.cart)
+    const selectCart = useSelector((state:RootState) => state.cart)
     const dispatch = useDispatch()
     
     useEffect(()=>{
         setSort("default")
-        console.log("cart items state initial:" + selectCart?.cartItems );
-
+        // console.log("cart items state initial:" + selectCart?.cartItems );
     },[])
 
     return (
     <div className='px-[10%] pt-[10vh] h-[100vh]  flex flex-row'>
-        {/* <div className='flex flex-col'>
-            <div>{selectCart.totalAmount }</div>
-            <div>{selectCart.totalItems }</div>
-            <button onClick={()=>{  
-                dispatch(clearCart({}))     
-                }}>
-                    Clear local
-                </button>
-        </div>  */}
          <div className="w-2/5 md:w-1/4 sticky ">
                 <h4 className='text-md mt-8'>Sort by :</h4>
                 <div className="flex flex-row items-center my-4 md:my-2">

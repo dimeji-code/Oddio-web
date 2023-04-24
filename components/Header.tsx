@@ -4,7 +4,7 @@ import { Rajdhani } from 'next/font/google';
 import { motion, useMotionValue, useTransform, animate } from "framer-motion";
 import Link from 'next/link'
 import { useSelector } from 'react-redux';
-import { RootState } from '@/pages/_app';
+import { RootState } from '@/store/store';
 
 const rajdhani = Rajdhani({ weight:['300','400','500','700'],  subsets: ['latin'],});
 
@@ -13,7 +13,7 @@ type Props = {}
 const Header = (props: Props) => {
   const [open, setOpen ] = useState(false)
   const [total, setTotal] = useState(0)
-  const cartItems = useSelector((state:RootState) => state.cart.totalItems)
+  const cartItems = useSelector((state:any) => state.cart.totalItems)
 
 useEffect(() => {
   console.log("Total AMT HEADER : ", cartItems);

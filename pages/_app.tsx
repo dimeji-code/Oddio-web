@@ -1,28 +1,30 @@
 import Header from '@/components/Header'
-import cartReducer, { loadState } from '@/reducers/cartReducer'
+import cartReducer, { loadState } from '@/store/cartReducer'
 import '@/styles/globals.css'
 import { configureStore } from '@reduxjs/toolkit'
 import type { AppProps } from 'next/app'
 import { Provider } from 'react-redux'
-
-const store = configureStore({
-  reducer:{
-   cart: cartReducer
- },
- preloadedState:loadState('cart')
-})
-
-export default function App({ Component, pageProps }: AppProps) {
+import { createWrapper } from 'next-redux-wrapper' 
+import {  store } from '@/store/store'
 
 
 
+// const wrappedStore = createWrapper(store)
+
+export default function  App  ({ Component, pageProps }: AppProps) {
 
   return(
+    // <>
+    // <Header/>
+    // <Component {...pageProps} />
+    // </> 
+  
   <Provider store={store}>
-    <Header/>
-    <Component {...pageProps} />
-  </Provider>  
+  <Header/>
+  <Component {...pageProps} />
+  </Provider> 
   ) 
 }
-export type RootState = ReturnType<typeof store.getState>
+// export default wrapper.withRedux(App)
 
+// export type RootState = ReturnType<typeof store.getState>

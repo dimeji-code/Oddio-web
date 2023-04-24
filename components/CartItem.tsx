@@ -2,7 +2,7 @@ import React from 'react'
 import { XCircleIcon, PlusCircleIcon, MinusCircleIcon } from '@heroicons/react/24/outline'
 import Image from 'next/image'
 import { useDispatch } from 'react-redux'
-import { addItem, removeItem } from '@/reducers/cartReducer'
+import { addItem, removeItem } from '@/store/cartReducer'
 
 type Props = {
     id:string,

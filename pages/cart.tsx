@@ -1,14 +1,14 @@
 import CartItem from '@/components/CartItem'
 import React, { useEffect, useState } from 'react'
 import { useDispatch, useSelector } from 'react-redux'
-import { clearCart } from '@/reducers/cartReducer'
-import { RootState } from './_app'
+import { clearCart } from '@/store/cartReducer'
+import { RootState } from '@/store/store'
 import Button from '@/components/Button'
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 
 const Cart = () => {
-  const selectCart = useSelector((state:RootState) => state.cart)
+  const selectCart = useSelector((state:any) => state.cart)
   // const itemAmount = useSelector((state:any) => state.cart.totalAmount)
   const [itemArray, setItemArray] = useState<any>([])
   const [localAmount, setLocalAmount] = useState<number>()
