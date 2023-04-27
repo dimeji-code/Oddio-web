@@ -22,7 +22,7 @@ export const Items:Item[] = [
     
     {
         id:"m3",
-        title:"Beats Sky",
+        title:"Bose",
         imgUrl:"https://images.unsplash.com/photo-1583394838336-acd977736f90?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=768&q=80",
         price:399.99,
         tags:["Headphones","Noise-cancelling","Durable","High-Quality","Black"]},
@@ -40,16 +40,16 @@ export const Items:Item[] = [
         tags:["Headphones","Noise-cancelling","Studio"]},
     {
         id:"m6",
-        title:"Airpods Max",
+        title:"SENNHEISER professional",
         imgUrl:"https://images.unsplash.com/photo-1567928513938-cd0e82a33ca3?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80",
         price:779.00,
-        tags:["Headphones","Noise-cancelling","durable","Blue"]},
+        tags:["Headphones","Noise-cancelling","durable","Studio"]},
     {
         id:"m7",
-        title:"BEATS flex",
+        title:"Soundcore Anker Life",
         imgUrl:"https://images.unsplash.com/photo-1612444530582-fc66183b16f7?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=776&q=80",
-        price:69.99,
-        tags:["earbuds","Noise-cancelling","Sport"]},
+        price:109.99,
+        tags:["earbuds","Noise-cancelling","studio"]},
     {
         id:"m8",
         title:"JBL",
@@ -58,10 +58,10 @@ export const Items:Item[] = [
         tags:["Headphones","Noise-cancelling","durable","wireless","Black"]},
     {
         id:"m9",
-        title:"BEATS EP",
+        title:"Bang & Olufsen Beoplay",
         imgUrl:"https://images.unsplash.com/photo-1520170350707-b2da59970118?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=930&q=80",
-        price:129.99,
-        tags:["Headphones","Noise-cancelling","durable","Red"]},
+        price:429.99,
+        tags:["Headphones","Noise-cancelling","durable","Black"]},
     {
         id:"m10",
         title:"AKG Headphones",
@@ -106,16 +106,16 @@ export const Items:Item[] = [
         tags:["Earbuds","Noise-cancelling","durable", "Leather","Brown"]},
     {
         id:"m17",
-        title:"TBC",
-        imgUrl:"https://images.unsplash.com/photo-1636451595436-262c53c74831?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1770&q=80",
+        title:"Sony WF-1000XM3",
+        imgUrl:"https://images.unsplash.com/photo-1598900863662-da1c3e6dd9d9?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1180&q=80",
         price:99.99,
         tags:["Earbuds","Noise-cancelling","durable"]},
     {
         id:"m18",
-        title:"TBC",
+        title:"Gramovox Gramophone",
         imgUrl:"https://images.unsplash.com/photo-1516656863674-c0cc173d1980?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1770&q=80",
         price:99.99,
-        tags:["Speaker","durable","Purple"]},
+        tags:["Speaker","durable","Purple","Bluetooth","Gramophone"]},
     {
         id:"m19",
         title:"Sonos Roam speaker",
